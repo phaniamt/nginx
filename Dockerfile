@@ -1,4 +1,4 @@
-FROM phanikumary1995
+FROM phanikumary1995/nginx
 COPY abc.com /etc/nginx/sites-available
 RUN ln -s /etc/nginx/sites-available/abc.com /etc/nginx/sites-enabled/abc.com
 EXPOSE 80 443
