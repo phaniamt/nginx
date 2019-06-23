@@ -7,6 +7,7 @@ server {
     server_name  mysql.yphanikumar.xyz www.mysql.yphanikumar.xyz;
 
     location / {
+        resolver 8.8.8.8;
         proxy_read_timeout    90;
         proxy_connect_timeout 90;
         proxy_redirect        off;
